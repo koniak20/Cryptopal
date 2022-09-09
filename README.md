@@ -17,3 +17,6 @@ My solutions to [cryptopals](https://www.cryptopals.com) problems.
 	- [ ] Done
 	- [ ] Code reviewed
 
+### Other amazing sites for crypto
+
+- [cryptohack](https://cryptohack.org/)
