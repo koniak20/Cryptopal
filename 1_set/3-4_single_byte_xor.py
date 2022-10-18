@@ -22,7 +22,7 @@ if __name__ == "__main__":
             for line in lines:
                 texts.append(bytes.fromhex(line.rstrip()))
     else:
-        text = bytes.fromhex("1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736")
+        text = bytes.fromhex("73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d")
     if len(texts) == 0:
         texts.append(text)
     for text in texts:
@@ -33,8 +33,8 @@ if __name__ == "__main__":
             for j,a in enumerate(text):
                 new[j] = a ^ i
             new_score = scoring(new.decode(errors="ignore"))
+            print(new.decode())
             if new_score > best_score:
                 best_score = new_score
                 result = new.decode(errors="ignore")
-        if len(result) > 15:
-            print(len(result),best_score,"\n",result)
+        print(len(result),best_score,"\n",result)
