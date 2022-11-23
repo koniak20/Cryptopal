@@ -25,6 +25,7 @@ if __name__ == "__main__":
         text = bytes.fromhex("73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d")
     if len(texts) == 0:
         texts.append(text)
+    end_result = []
     for text in texts:
         best_score = 0
         new = bytearray(len(text))
@@ -33,8 +34,10 @@ if __name__ == "__main__":
             for j,a in enumerate(text):
                 new[j] = a ^ i
             new_score = scoring(new.decode(errors="ignore"))
-            print(new.decode())
             if new_score > best_score:
                 best_score = new_score
                 result = new.decode(errors="ignore")
-        print(len(result),best_score,"\n",result)
+        end_result.append((best_score,len(result),result))
+    end_result.sort()
+    for score,length,result in end_result:
+        print(f"{score} {length} {result}")

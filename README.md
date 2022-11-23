@@ -2,20 +2,17 @@
 
 My solutions to [cryptopals](https://www.cryptopals.com) problems.
 - Set 1 Basics
-	- [ ] Done
-	- [ ] Code reviewed
+	- [x] Done
+	- [ ] Notebook
 - Set 2 Block crypto
 	- [ ] Done
-	- [ ] Code reviewed
+	- [ ] Notebook
 - Set 3 Block & stream crypto
 	- [ ] Done
-	- [ ] Code reviewed
-- Set 5 Diffie-Hellman and friends
+	- [ ] Notebook
+- Set 4 Stream crypto & randomness
 	- [ ] Done
-	- [ ] Code reviewed
-- Set 6 RSA and DSA
-	- [ ] Done
-	- [ ] Code reviewed
+	- [ ] Notebook
 
 ### Other amazing sites for crypto
 
